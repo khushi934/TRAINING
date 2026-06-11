@@ -1,0 +1,21 @@
+.main{
+    background-image:url(https://stock.adobe.com/search?k=login+background);
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+h1{
+    text-align:center;
+    
+    color:blue;
+}
+.r-form{
+    text-align: center;
+    margin-left:100px;
+
+
+}
+button{
+    margin-top:20px;
+
+}
