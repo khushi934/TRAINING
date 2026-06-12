@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        const Sum=()=>{
+            const a= Number(document.getElementById("num1").value)
+            const b=Number(document.getElementById("num2").value)
+            const addition=a+b
+            document.getElementById("add").innerHTML=addition
+        }
+        const Subtract=()=>{
+            const a= Number(document.getElementById("num1").value)
+            const b=Number(document.getElementById("num2").value)
+            const sub=a-b
+            document.getElementById("sub").innerHTML=sub
+        }
+        const Multiplication=()=>{
+            const a= Number(document.getElementById("num1").value)
+            const b=Number(document.getElementById("num2").value)
+            const multiple=a*b
+            document.getElementById("multiply").innerHTML=multiple
+
+        }
+        const Division=()=>{
+            const a= Number(document.getElementById("num1").value)
+            const b=Number(document.getElementById("num2").value)
+            const div=a/b
+            document.getElementById("divide").innerHTML=div
+
+
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="num1">
+    <input type="numebr" id="num2">
+    <p id="add"></p>
+    <button onclick="Sum()">Add</button>
+    <p id="sub"></p>
+    <button onclick="Subtract()">Sub</button>
+    <p id="multiply"></p>
+    <button onclick="Multiplication()">Multiply</button>
+    <p id="divide"></p>
+    <button onclick="Division()">Divide</button>
+    
+</body>
+</html>
