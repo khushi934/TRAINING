@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const fetchData =()=>{
+    const res =fetch('https://jsonplaceholder.typicode.com/users')
+    .then(res => res.json())
+    .then((data)=>{data.forEach(user => {
+         const li =document.createElement("li")
+        li.innerHTML = `
+        <h2>${user.name}</h2>
+        <p>${user.email}</p>
+        <hr>
+        `
+        document.getElementById("list").appendChild(li)    
+    })}
+    ) 
+ .catch((error)=>console.log(error))
+
+}
+    </script>
+    
+</head>
+<body>
+    <h2>User Data</h2>
+    <button onclick="fetchData()">Show Data</button>
+    <ol id="list"></ol>
+    
+</body>
+</html>
